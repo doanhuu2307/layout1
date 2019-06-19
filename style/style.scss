@@ -1,0 +1,240 @@
+.flex
+{
+    display: flex;
+}
+.container
+{
+    max-width: 1140px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.home
+{
+ 
+    .main-top
+    {
+       .header
+       {
+        {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: #fff;
+           
+            .logo
+            {
+                font-size: 30px;
+                color: #D980FA;
+                font-weight: 800;
+            }
+            .navabar
+            {
+                ul
+                {
+                    li
+                    {
+                        margin-right: 20px;
+                        position: relative;
+                     
+                        &:hover
+                        {
+                            .hiden
+                            {
+                            display: block;
+                            animation: navabar 1s; 
+                            transform-origin: 50% 0%;
+                             
+                              
+                            }
+                        }
+                        
+                        a
+                        {
+                            color: black;
+                            font-size: 17px;
+                            margin-right: 5px;
+                            &.active
+                            {
+                                color:#78e08f;
+                            }
+                            &:hover
+                            {
+                                color:#78e08f;
+                            }
+                        }
+                        .hiden
+                        {
+                            position: absolute;
+                            width: 200px;
+                            background: rgba(black,.5);
+                            display: none;
+                            padding: 10px;
+                            border-radius:5px; 
+                            margin-bottom: 10px;
+                            transition: all 1s;
+                           
+                            
+                            
+                           
+                           
+                           
+                            a
+                            {
+                                color: white;
+                                &:hover
+                                {
+                                    color: red;
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+            }
+            .search
+            {
+               
+               form
+               { 
+                   background: #ddd;
+                   margin-right: 7px;
+                   input
+                   {
+                       padding: 12px;
+                       background: #ddd;
+                       margin: 0;
+                   }
+                   button
+                   {
+                       padding: 13px;
+                       background: #78e08f;
+                   }
+               }
+               .icloud
+               {
+                   padding: 12px;
+                   background:#D980FA;
+                   border-radius:4px; 
+               }
+            }
+        }
+       }
+        
+        .banner
+        {   padding: 4vw 0;
+            position: relative;
+            .banner-top
+            {
+               .bner-content
+               {
+                   display: flex;
+                   justify-content: space-between;
+                   align-items: center;
+                   .text
+                   {
+                       width: 50%;
+                       h3
+                       {
+                           font-size: 50px;
+                           span
+                           {
+                               color: #78e08f;
+                           }
+                       }
+                       p
+                       {
+                           font-size: 18px;
+                           line-height: 2;
+                       }
+                       button
+                       {
+                           margin-top: 20px;
+                           background: #78e08f;
+                           padding: 10px;
+                           font-size: 25px;
+                           border-radius:10px;
+                           color: white; 
+                       }
+                   }
+                   
+                   .img
+                   {
+                       width: 50%;
+                       img
+                       {
+                           width: 550px;
+                           max-width: 100%;
+                           
+                       }
+                   }
+               }
+               .icon
+               {
+                  img
+                  {
+                    animation: icon1 2s;
+                    animation-iteration-count: infinite;
+                    &.icon1
+                    {
+                        position: absolute;
+                        top:37%;
+                        right: 2%;  
+                    }
+                    &.icon2
+                    {
+                        position: absolute;
+                        top:12%;
+                        right: 50%;
+                    }
+                    &.icon3
+                    {
+                        position: absolute;
+                        top:10%;
+                        right: 15%;
+                    }
+                    &.icon4
+                    {
+                        position: absolute;
+                        bottom:14%;
+                        right: 7%;
+                    }
+                    &.icon5
+                    {
+                        position: absolute;
+                        top:30%;
+                        left: 4%;
+                    }
+                    &.icon6
+                    {
+                        position: absolute;
+                        bottom:18%;
+                        left: ;
+                    }
+                  }
+               }
+            }
+        }
+    }
+}
+@keyframes navabar
+{
+    from{
+        transform: translateY(30px) scaleY(0);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+}
+@keyframes icon1{
+  0%{
+      transform: rotate(0deg);
+  }
+  100%{
+      transform: rotate(359deg);
+  }
+}
